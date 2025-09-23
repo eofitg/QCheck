@@ -1,0 +1,11 @@
+[
+{
+  "modid": "qcheck",
+  "name": "QCheck",
+  "description": "A 1.8.9 mod to prevent accidental item drops.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/eofitg/QCheck",
+  "authorList": ["eofitg"]
+}
+]
