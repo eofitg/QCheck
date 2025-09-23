@@ -43,6 +43,7 @@ minecraft {
     replace "@NAME@", projectName
     replace "@VER@", projectVersion
     replace "@ID@", projectId
+    clientJvmArgs += "-Dfml.coreMods.load=net.eofitg.camove.forge.QCheckLoadingPlugin"
 }
 
 repositories {
@@ -69,7 +70,7 @@ shadowJar {
 
     manifest.attributes(
             'TweakClass': 'org.spongepowered.asm.launch.MixinTweaker',
-            'MixinConfigs': "mixins.${projectId}.json",
+            'MixinConfigs': "mixin.${projectId}.json",
             "ForceLoadAsMod": true,
             'ModSide': 'CLIENT',
     )
