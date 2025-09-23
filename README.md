@@ -1,6 +1,6 @@
 # Q Check
 
-*A lightweight Forge 1.8.9 mod to prevent accidental item drops.*
+*A Forge 1.8.9 mod to prevent accidental item drops.*
 
 When you press the drop key, the mod checks if your **currently held item** is in the blacklist. If it is, the drop will be blocked.
 
