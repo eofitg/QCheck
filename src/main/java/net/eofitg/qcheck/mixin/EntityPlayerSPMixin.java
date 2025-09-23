@@ -16,7 +16,7 @@ public class EntityPlayerSPMixin {
         EntityPlayerSP player = (EntityPlayerSP) (Object) this;
         ItemStack heldItem = player.getHeldItem();
 
-        if (QCheck.config.mapContains(heldItem)) {
+        if (QCheck.config.isEnabled() && QCheck.config.mapContains(heldItem)) {
             cir.setReturnValue(null);
             cir.cancel();
         }
