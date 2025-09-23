@@ -4,11 +4,9 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import net.eofitg.qcheck.command.QCheckCommand;
 import net.eofitg.qcheck.config.QCheckConfig;
-import net.eofitg.qcheck.listener.DropListener;
 import net.eofitg.qcheck.util.Reference;
 import net.minecraft.command.ICommand;
 import net.minecraftforge.client.ClientCommandHandler;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -39,12 +37,7 @@ public class QCheck {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent e) {
-        registerListeners(new DropListener());
         registerCommands(new QCheckCommand());
-    }
-
-    private void registerListeners(Object... listeners) {
-        Arrays.stream(listeners).forEachOrdered(MinecraftForge.EVENT_BUS::register);
     }
 
     private void registerCommands(ICommand... commands) {
