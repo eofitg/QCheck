@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.7.10",
+  "package": "net.eofitg.qcheck.mixin",
+  "refmap": "mixin.qcheck.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "EntityPlayerSPMixin"
+  ]
+}
