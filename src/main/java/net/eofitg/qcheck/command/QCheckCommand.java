@@ -76,9 +76,10 @@ public class QCheckCommand extends CommandBase {
                 } else {
                     StringBuilder list = new StringBuilder("\n");
                     for (Map.Entry<Integer, String> entry : QCheck.config.getCheckMap().entrySet()) {
+                        list.append(EnumChatFormatting.GRAY);
                         list.append(entry.getKey()).append(": {").append(entry.getValue()).append("}\n");
                     }
-                    sender.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + list.toString()));
+                    sender.addChatMessage(new ChatComponentText(list.toString()));
                 }
                 break;
             }
