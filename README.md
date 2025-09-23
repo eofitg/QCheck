@@ -19,5 +19,3 @@ When you press the drop key, the mod checks if your **currently held item** is i
 ## Configuration
 
 `qcheck.json`
-
----
