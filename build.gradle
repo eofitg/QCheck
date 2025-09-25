@@ -43,7 +43,7 @@ minecraft {
     replace "@NAME@", projectName
     replace "@VER@", projectVersion
     replace "@ID@", projectId
-    clientJvmArgs += "-Dfml.coreMods.load=net.eofitg.camove.forge.QCheckLoadingPlugin"
+    clientJvmArgs += "-Dfml.coreMods.load=net.eofitg.qcheck.forge.QCheckLoadingPlugin"
 }
 
 repositories {
